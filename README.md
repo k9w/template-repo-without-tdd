@@ -34,6 +34,7 @@ See <LICENSE> for copyright info.
 
 ## Contact Information
 
-<https://twitter.com/k9w>
-<https://linkedin.com/in/k9w>
+ - <https://twitter.com/k9w>
+
+ - <https://linkedin.com/in/k9w>
 
