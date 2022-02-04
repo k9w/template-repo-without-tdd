@@ -1,28 +1,36 @@
-/*
 
-The example tests below reference the Date object constructor and
-getDay method. They are both built into JavaScript. This means these
-tests should pass without writing any code at all. That is why the
-import line below is also commented out.
+import {Object1, Object2} from '../src/js/age.js';
 
-This example file is to be adapted, and likely entirely rewritten, for
-the new project based on this template repository.
+describe('', () => {
 
-*/
-
-// import Date from '../src/index.js';
-
-describe('Date', () => {
-
-  test('should correctly return number from zero to six', () => {
-    const d = new Date('Feb 2 2001');
-    expect(d.getDay()).toEqual(5);
+  beforeEach('', () => {
+    x = new Object1(parameter, or 'argument');
+  });
+  
+  test('should correctly *do something*', () => {
+    
   });
 
-  test('should correctly display the named 3-letter weekday corresponding to the index number', () => {
-    const nameOfWeekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    let day = d.getDay(5);
-    expect(nameOfWeekday[day]).toEqual('Friday');
+  it('should correctly *do something esle*', () => {
+    
   });
-
+  
 });
+
+
+describe('', () => {
+
+  beforeEach('', () => {
+    x = new Object2(parameter, or 'argument');
+  });
+  
+  it('should correctly *do something*', () => {
+    
+  });
+
+  test('should correctly *do something esle*', () => {
+    
+  });
+  
+});
+
