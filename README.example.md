@@ -1,8 +1,12 @@
-# Super Galactic Age Calculator
+# Parsing JSON
 
 #### Convert your age from Earth years to other-planet-based years
 
-#### By _Kevin Williams_
+#### Contributors
+
+ * _Kevin Williams_
+ * _Drew Henderson_
+ * _Ryan Bass_
 
 ## Technologies Used
 
@@ -16,21 +20,18 @@
 
 ## Description
 
-Welcome to my second Independent Project for Intermediate JavaScript at
+Welcome to our first week 3 pair programming project for Intermediate JavaScript at
 [Epicodus](https://epicodus.com).
 
-I started it on Friday February 4th 2022. [This project's
-lesson](https://www.learnhowtoprogram.com/intermediate-javascript/test-driven-development-and-environments-with-javascript/tdd-with-javascript-independent-project)
-in the [curriculum](https://learnhowtoprogram.com/) says no User
-Interface is required. The project will focus on Business Logic in the
-JavaScript files. This means no HTML or CSS will be added beyond what
-came from my [template
-repo](https://github.com/k9w/template-repo). Nor will the project be
-published to Github Pages.
+We started it on Monday February 7th 2022 from [this project's
+lesson](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/making-api-calls-with-javascript)
+in the [curriculum](https://learnhowtoprogram.com/).
 
-You can find more of my work at:
+You can find more of our work at:
 
 * https://github.com/k9w
+* https://github.com/probablynotryan
+* https://github.com/DrewHendersonGitHub
 
 ## Setup/Installation Requirements
 
@@ -39,6 +40,8 @@ You can find more of my work at:
 
 * _Clone the project from your repo to your machine or preferred
   location and cd into its folder._
+
+* _You'll need the Node Package Manager (npm) to build the project. To it up, install [Node JS](https://nodejs.org) for your platform._
 
 * _Install webpack and other packages listed above and in package.json
   by typing 'npm install' just one time._
@@ -72,7 +75,7 @@ You can find more of my work at:
   browser._
 
 * _To add to and improve the project with Test-Driven Development
-  rules, add your ideas to brainstorming.txt. Then modify or add to
+  rules, add your ideas to planHowTheAppWorks.txt. Then modify or add to
   the tests first, then write new code and see if the tests pass._
 
 * _If you like this project, please contribute issues and especially
