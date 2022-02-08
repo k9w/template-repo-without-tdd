@@ -1,8 +1,8 @@
-export default class  {
-  static () {
+export default class CLASSNAMEHERE {         // this one
+  static FUNCTIONNAMEHERE() {                // this one
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
-      const url = ;
+      const url = `URLHERE`;                 // this one
       request.onload = function() {
         if (this.status === 200) {
           resolve(request.response);
