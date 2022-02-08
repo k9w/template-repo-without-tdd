@@ -1,6 +1,6 @@
 # Parsing JSON
 
-#### Convert your age from Earth years to other-planet-based years
+#### Uses the Giphy API to search for and display trending gifs
 
 #### Contributors
 
@@ -17,15 +17,16 @@
 * _[Jest](https://jestjs.io)_
 * _[ESLint](https://eslint.org)_
 * _[Babel](https://babeljs.io)_
+* _[Dotenv](https://www.npmjs.com/package/dotenv)_
 
 ## Description
 
 Welcome to our first week 3 pair programming project for Intermediate JavaScript at
 [Epicodus](https://epicodus.com).
 
-We started it on Monday February 7th 2022 from [this project's
-lesson](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/making-api-calls-with-javascript)
-in the [curriculum](https://learnhowtoprogram.com/).
+We started it on Tuesday February 8th 2022 from [this project's
+lesson](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/api-refactor-dino-ipsum)
+in the [curriculum](https://learnhowtoprogram.com/). For the Project Refactor section of that lesson, we chose to refactor 'giphy-website', this project.
 
 You can find more of our work at:
 
@@ -40,6 +41,10 @@ You can find more of our work at:
 
 * _Clone the project from your repo to your machine or preferred
   location and cd into its folder._
+
+* _Register on Giphy.com and get an API key. <https://developers.giphy.com/docs/api>_
+
+* _Make a new file called ```.env``` and add ```API_KEY = "key"``` with your key replacing ```"key"```_
 
 * _You'll need the Node Package Manager (npm) to build the project. To it up, install [Node JS](https://nodejs.org) for your platform._
 
