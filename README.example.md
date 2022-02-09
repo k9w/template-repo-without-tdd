@@ -1,12 +1,11 @@
-# Parsing JSON
+# Bike Lookup
 
-#### Uses the Giphy API to search for and display trending gifs
+#### Search for stolen bikes in the area
 
 #### Contributors
 
+ * _Alex Adamovic_
  * _Kevin Williams_
- * _Drew Henderson_
- * _Ryan Bass_
 
 ## Technologies Used
 
@@ -21,18 +20,19 @@
 
 ## Description
 
-Welcome to our first week 3 pair programming project for Intermediate JavaScript at
+Welcome to our first two-day project in week 3 of Intermediate JavaScript at
 [Epicodus](https://epicodus.com).
 
-We started it on Tuesday February 8th 2022 from [this project's
-lesson](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/api-refactor-dino-ipsum)
-in the [curriculum](https://learnhowtoprogram.com/). For the Project Refactor section of that lesson, we chose to refactor 'giphy-website', this project.
+We started it on Wednesday February 9th 2022 from [this project's
+lesson](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/martian-weather-bike-index-api-of-choice-two-day-project)
+in the [curriculum](https://learnhowtoprogram.com/).
+
+This project uses the [Bike Index API](https://github.com/bikeindex/bike_index).
 
 You can find more of our work at:
 
+* https://github.com/alexadamovic
 * https://github.com/k9w
-* https://github.com/probablynotryan
-* https://github.com/DrewHendersonGitHub
 
 ## Setup/Installation Requirements
 
@@ -42,11 +42,9 @@ You can find more of our work at:
 * _Clone the project from your repo to your machine or preferred
   location and cd into its folder._
 
-* _Register on Giphy.com and get an API key. <https://developers.giphy.com/docs/api>_
+* _[No API Key or registration are needed](https://bikeindex.org/documentation/api_v3) for the API requests our app uses._
 
-* _Make a new file called ```.env``` and add ```API_KEY = "key"``` with your key replacing ```"key"```_
-
-* _You'll need the Node Package Manager (npm) to build the project. To it up, install [Node JS](https://nodejs.org) for your platform._
+* _You'll need the Node Package Manager (npm) to build the project. To set it up, install [Node JS](https://nodejs.org) for your platform._
 
 * _Install webpack and other packages listed above and in package.json
   by typing 'npm install' just one time._
@@ -60,7 +58,7 @@ You can find more of our work at:
   the project folder.
 
 * _Build and bundle the project from the src/ folder into the dist/
-  folder with 'npm run build' to just build it or 'npm run start' to
+  folder with 'npm run build' to just build it; or run 'npm run start' to
   build it and start the local Webpack server._
 
 * The reason to 'build' the web application in this manner is to
@@ -80,8 +78,9 @@ You can find more of our work at:
   browser._
 
 * _To add to and improve the project with Test-Driven Development
-  rules, add your ideas to planHowTheAppWorks.txt. Then modify or add to
-  the tests first, then write new code and see if the tests pass._
+  rules, add your ideas to planHowTheAppWorks.txt (not used in this 
+  project). Then modify or add to the tests first, then write new code 
+  and see if the tests pass._
 
 * _If you like this project, please contribute issues and especially
   pull requests to improve it._
@@ -99,11 +98,11 @@ License](https://choosealicense.com/licenses/isc). See the file called
 this same folder for distribution and liability terms as well as
 copyright holder info.
 
-_Third-party packages are subject to their own license and copyright._
+_Third-party APIs and packages are subject to their own license and
+copyright._
 
 ## Contact Information
 
  - <https://twitter.com/k9w>
 
  - <https://linkedin.com/in/k9w>
-
