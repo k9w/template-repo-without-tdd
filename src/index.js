@@ -2,45 +2,42 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import [constructor] from './business-logic.js'
+import CryptoChecker from './js/crypto.js';
 
 function clearFields() {
-  $('#location').val("");
-  $('.showErrors').text("");
-  $('.showHumidity').text("");
-  $('.showTemp').text("");
+  $('#search-field').val("");
+  $('#show-currency').html("");
+  $('#show-errors').html("");
+}
 
 function getElements(response) {
-  if (response.main) {
-    $('showHumidity').text(`text ${reponse.name} is ${response.main.humidity}`);
-  } else {
-    $('.showErrors').text(`There was an error: ${response}`);
+  console.log(response);
+  if (typeof response === "string") {
+    $('#show-errors').text(`error on our end: ${response}`);
+  } else if (!response[0]) {
+    $('#show-errors').text(`error on your end: This currency doesn't exist. Try again!`);
+    return;
+  } else if (response[0]) {
+    $('#show-currency').text(`Here is the description for ${response[0].name}. ${response[0].description}`);
+    if (response[0].description === "") {
+      $('#show-currency').text(`There is no description for ${response[0].name}.`);
+    }
   }
 }
 
-// The two code blocks below mix and match promise and async code in a broken way. Be sure to refactor it in your project accordingly.
-
-async function makeApiCall(city) {
-  const response = await WeatherService.getWeather(city);
+async function makeApiCall(currency) {
+  let response = await CryptoChecker.getCurrency(currency);
   getElements(response);
 }
 
 $(document).ready(function() {
-  $('#dinoaur-form').submit(function(event) {
-    event.preventDefault();
-    result = $('result').val();
+  $('#get-crypto').click(function() {
+    let currency = $('#search-field').val().toUpperCase();
     clearFields();
-    let promise = Dinosaur.getDinoWords();
-    makeApiCall(city);
-    promise.then(function(response) {
-      const body = JSON.parse(response);
-
-    }, function(error) {
-
-    });
-    
-    
-    $('.result').html("");
+    if (currency.length === 3) {
+      makeApiCall(currency);
+    } else {
+      $('#show-errors').text(`You can only enter 3 characters, no more, no less.`);
+    }
   });  
 });
-

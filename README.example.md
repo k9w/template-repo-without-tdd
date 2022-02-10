@@ -1,11 +1,12 @@
-# Bike Lookup
+# Crypto Checker
 
-#### Search for stolen bikes in the area
+#### Lookup cryptocurrency numbers and stats
 
 #### Contributors
 
  * _Alex Adamovic_
  * _Kevin Williams_
+ * _Drew Henderson_
 
 ## Technologies Used
 
@@ -20,19 +21,20 @@
 
 ## Description
 
-Welcome to our first two-day project in week 3 of Intermediate JavaScript at
+Welcome to our second two-day project in week 3 of Intermediate JavaScript at
 [Epicodus](https://epicodus.com).
 
 We started it on Wednesday February 9th 2022 from [this project's
 lesson](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/martian-weather-bike-index-api-of-choice-two-day-project)
 in the [curriculum](https://learnhowtoprogram.com/).
 
-This project uses the [Bike Index API](https://github.com/bikeindex/bike_index).
+This project uses the [Nomics Crypto API](https://p.nomics.com/cryptocurrency-bitcoin-api).
 
 You can find more of our work at:
 
 * https://github.com/alexadamovic
 * https://github.com/k9w
+* https://github.com/drewhendersongithub
 
 ## Setup/Installation Requirements
 
@@ -42,7 +44,14 @@ You can find more of our work at:
 * _Clone the project from your repo to your machine or preferred
   location and cd into its folder._
 
-* _[No API Key or registration are needed](https://bikeindex.org/documentation/api_v3) for the API requests our app uses._
+* _[Get an API Key](https://p.nomics.com/cryptocurrency-bitcoin-api) and retain [the attribution](https://p.nomics.com/pricing#attribution) we've included in our HTML for personal use._
+
+
+> You'll need to include a "do follow" link on your home page that says "Crypto Market Cap & Pricing Data Provided By Nomics". Be sure to link the phrase "Crypto Market Cap & Pricing Data Provided By Nomics" to "https://nomics.com". Your attribution should look like the following:
+
+> [Crypto Market Cap & Pricing Data Provided By Nomics](https://nomics.com).
+
+
 
 * _You'll need the Node Package Manager (npm) to build the project. To set it up, install [Node JS](https://nodejs.org) for your platform._
 
@@ -78,9 +87,8 @@ You can find more of our work at:
   browser._
 
 * _To add to and improve the project with Test-Driven Development
-  rules, add your ideas to planHowTheAppWorks.txt (not used in this 
-  project). Then modify or add to the tests first, then write new code 
-  and see if the tests pass._
+  rules, add your ideas to planHowTheAppWorks.txt. Then modify or add to 
+  the tests first, then write new code and see if the tests pass._
 
 * _If you like this project, please contribute issues and especially
   pull requests to improve it._
@@ -94,7 +102,7 @@ You can find more of our work at:
 
 The code which originated in this project is covered by the [ISC
 License](https://choosealicense.com/licenses/isc). See the file called
-[LICENSE](https://github.com/k9w/super-galactic/blob/main/LICENSE) in
+[LICENSE](https://github.com/k9w/crypto-checker/blob/main/LICENSE) in
 this same folder for distribution and liability terms as well as
 copyright holder info.
 
