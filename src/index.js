@@ -10,6 +10,19 @@ function clearFields() {
   $('.showHumidity').text("");
   $('.showTemp').text("");
 
+function getElements(response) {
+  if (response.main) {
+    $('showHumidity').text(`text ${reponse.name} is ${response.main.humidity}`);
+  } else {
+    $('.showErrors').text(`There was an error: ${response}`);
+  }
+}
+
+async function makeApiCall(city) {
+  const response = await WeatherService.getWeather(city);
+  getElements(response);
+}
+
 $(document).ready(function() {
   $('#dinoaur-form').submit(function(event) {
     event.preventDefault();
