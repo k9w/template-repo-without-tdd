@@ -18,6 +18,8 @@ function getElements(response) {
   }
 }
 
+// The two code blocks below mix and match promise and async code in a broken way. Be sure to refactor it in your project accordingly.
+
 async function makeApiCall(city) {
   const response = await WeatherService.getWeather(city);
   getElements(response);
@@ -27,8 +29,9 @@ $(document).ready(function() {
   $('#dinoaur-form').submit(function(event) {
     event.preventDefault();
     result = $('result').val();
-
+    clearFields();
     let promise = Dinosaur.getDinoWords();
+    makeApiCall(city);
     promise.then(function(response) {
       const body = JSON.parse(response);
 
