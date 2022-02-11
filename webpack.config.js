@@ -17,7 +17,7 @@ module.exports = {
     new Dotenv(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Template Repo',
+      title: 'template-repo-with-tdd',
       template: './src/index.html',
       inject: 'body'
     })
