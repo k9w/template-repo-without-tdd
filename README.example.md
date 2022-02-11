@@ -45,8 +45,9 @@ You can find more of my work at:
 * _You'll need the Node Package Manager (npm) to build the project. To
   set it up, install [Node JS](https://nodejs.org) for your platform._
 
-* _Install webpack and other packages listed above and in package.json
-  and type:_
+* _Install the npm packages so that you can build the project. The
+  command below will automatically fetch the list of packages from
+  package.json._
   
   ```$ npm install```
 
